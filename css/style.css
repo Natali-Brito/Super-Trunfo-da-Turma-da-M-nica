@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(204, 153, 255, .6),rgba(204, 153, 255, .6)),url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   /*  height: 100%;
+    width: 100%; */
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Tela Index */
+#inicio{
+    width: 50%;
+    background:rgba(255, 255, 255,0.5);
+    height: 50%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 2px rgba(153, 0, 204,0.4);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.inicio-divs{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#area-a{
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+}
+
+#area-b{
+    width: 40%;
+    justify-content: center;
+}
+
+.img-a{
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+#img-a1{
+    background: url("images/logo2.png") no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 45%;
+    margin-top: 20px;
+}
+
+#img-a2{
+    background: url("images/tm3.png") no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 40%;
+}
+
+#area-b img{
+    margin: 30px auto; 
+    max-width: 125px;  
+}
+
+#area-b button{
+    margin: 20px auto;
+    background-color:blueviolet ;
+}
+#area-b a{
+    cursor: pointer;
+    background-color: blueviolet;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    margin:20px auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*Icon e Placar*/
+header{
+    padding: 10px;
+    margin-top:30px;
+    background:rgba(71, 69, 71, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#icon{
+    width: 20%;
+    justify-content: center;
+}
+
+#placar{
+    width: 80%;
+    color: #fff;
+}
+
+table, th, td, caption{
+    border: 1px solid #fff;
+    color: #ffff00;
+    text-align: center;
+}
+
+/*Area das cartas e botoes*/
+
+/*~~~~~~Cartas~~~~~~~~*/
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cartas{
+    width: 50%;
+    /*background:rgba(255, 255, 255,0.5);*/
+    background:rgba(255, 255, 255,1);
+    height: 50%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 2px rgba(153, 0, 204,0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5% 0;
+    flex-wrap: wrap;
+}
+
+.carta{
+    background-image: url(images/fundoB.png);
+    background-size: cover;
+    width: 250px;
+    padding: 1%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.area-carta{
+    margin: auto;;
+    background-color: #33ccff;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.nome, .indice{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    color: #000066;
+}
+
+.nome p, .indice p{
+    margin: auto;
+    font-size: 20px;
+}
+
+.personagem{
+    width: 160px;
+    height: 150px;
+    margin: 10px auto ;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.indice{
+    height: 20px;
+}
+
+.indice p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.atributos{
+    margin-top: 10px;
+}
+
+.atributos ul{
+    list-style: none;
+    list-style-type:none;
+    padding: 0 5px;
+
+}
+
+.atributos li{
+    background-color: white;
+    border: 1px solid white;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    color: #ff0000;
+    font-weight: bold;
+}
+.carta span{
+    color: #660066;
+    font-weight: bold;
+}
+
+/*~~~~~~Botoes~~~~~~~~*/
+#Area-Botoes{
+    width: 20%;
+    background:rgba(255, 255, 255,0.5);
+    height: 50%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px 2px rgba(153, 0, 204,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#Area-Botoes img{
+    margin: 5px auto;
+
+}
+
+.button{
+    padding: 10px 20px;
+    border-color: white;
+    margin: 10px 30%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+#btn-sortear{
+    background-color: #ff0000;
+}
+
+#btn-jogar{
+    background-color: #009900;
+}
+
+select{
+    color: #990099; 
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px; 
+    background: yellow;
+    border: 2px solid white;
+    margin: 10px 30%;
+}
+
+/*Resultado*/
+footer{
+    margin-top: 100px;
+    padding: 10px;
+    background:rgba(153, 0, 204,0.7);
+    display: flex;
+    justify-content: center;
+    color: #ffff00;
+}

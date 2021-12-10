@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Super Trunfo</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <header>
+            <div id="icon">
+                <img src="images/icon.png" width="70px">
+                <img src="images/tm2.png" width="100px">
+            </div>
+            <div id="placar">
+                 <table style="width: 100%;">
+                    <caption>Cartas</caption>
+                    <tr>
+                        <th>JOGADOR</th>
+                        <th>MÁQUINA</th>
+                        <th>MONTE</th>
+                    </tr>
+                    <tr>
+                        <td id="placarjogador">0</td>
+                        <td id="placarmaquina">0</td>
+                        <td id="placarmonte">0</td>
+                    </tr>
+                </table>  
+            </div>
+       </header>
+       <main>
+            <div id="cartas">
+                <div class="carta" id="carta-Jogador">
+                    <div class="area-carta">
+                        <div class="nome">
+                            <p id="nomeJ"></p>
+                        </div>
+                        <div class="personagem" id="personagemJ"></div>
+                        <div class="indice">
+                            <p id="indiceJ"></p>
+                        </div>
+                        <div class="atributos">
+                            <ul>
+                                <li id="humorJ">...</li>
+                                <li id="espertezaJ">...</li>
+                                <li id="anoJ">...</li>
+                                <li id="hallJ">...</li>
+                                <li id="idadeJ">...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="carta-Maquina">
+                    <div class="area-carta">
+                        <div class="nome">
+                            <p id="nomeM"></p>
+                        </div>
+                        <div class="personagem" id="personagemM"></div>
+                        <div class="indice">
+                            <p id="indiceM"></p>
+                        </div>
+                        <div class="atributos">
+                            <ul>
+                                <li id="humorM">...</li>
+                                <li id="espertezaM">...</li>
+                                <li id="anoM">...</li>
+                                <li id="hallM">...</li>
+                                <li id="idadeM">...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div id="Area-Botoes">
+                <img src="images/logo2.png" width="150px"><br>
+                 <img src="images/tm3.png" width="150px"><br>
+                <input type="button" value="Sortear" class="button" id="btn-sortear" onclick="sortearCarta()"><br>
+                <select id="select">
+                    <option hidden="" disabled="disabled" selected="selected" value="">Atributos</option>
+                </select>
+                <br><input type="button" value="Jogar" class="button" id="btn-jogar" onclick="jogar()" >
+            </div>
+       </main>
+       <footer>
+           <div>
+               <h3 id="resultado">Resultado</h3>
+           </div>
+       </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
